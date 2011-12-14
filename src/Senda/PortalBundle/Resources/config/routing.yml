@@ -1,0 +1,10 @@
+portada:
+    pattern:  /
+    defaults: { _controller: PortalBundle:Default:index }
+    requirements:
+        _method:  GET
+estatica:
+    pattern:  /sitio/{pagina}
+    defaults: { _controller: PortalBundle:Default:estatica }
+    requirements:
+      pagina: soluciones|servicios|clientes|nosotros|contacto|copyright|privacidad|condiciones

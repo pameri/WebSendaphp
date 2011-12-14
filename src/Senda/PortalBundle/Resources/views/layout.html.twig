@@ -1,0 +1,19 @@
+{# src/Blogger/BlogBundle/Resources/views/layout.html.twig #}
+{% extends '::base.html.twig' %}
+
+{% block header %}
+    <nav>
+      	<div class="logo">
+      	  <a href="{{ path('portada') }}"><img src="{{ asset('images/logosenda.png') }}" /></a>
+      	</div>
+      	<ul>
+          <li><a href="{{ path('portada') }}">  Inicio</a></li>
+          <li><a href="{{ path('estatica', { 'pagina': 'soluciones'}) }}">Soluciones</a></li>
+          <li><a href="{{ path('estatica', { 'pagina': 'servicios'})}}">Servicios</a></li>
+          <li><a href="{{ path('estatica', { 'pagina': 'clientes'})}}">Clientes</a></li>
+          <li><a href="{{ path('estatica', { 'pagina': 'nosotros'})}}">Nosotros</a></li>
+          <li><a href="{{ path('estatica', { 'pagina': 'contacto'})}}">Contacto</a></li>
+
+        </ul>
+    </nav>
+{% endblock %}
