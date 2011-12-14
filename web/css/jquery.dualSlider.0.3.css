@@ -1,0 +1,173 @@
+/* CAROUSEL */
+
+.carousel{
+    position:relative;
+    height: 310px;
+    width: 860px;
+    overflow:hidden;
+}
+
+.carousel h2{
+	color: #fff;
+}
+
+
+.carousel .backgrounds{
+    height: 310px;
+}
+
+.carousel .backgrounds .item{
+    width: 860px;
+    height: 310px;
+    float:left;
+    position:relative;
+    z-index:1;
+}
+
+.carousel .panel{
+    background:url(../images/panel-bg.jpg) no-repeat 0 0;
+    color: #fff;
+    position:absolute;
+    right: 0;
+    top:0;
+    height: 310px;
+    width: 319px;
+    z-index:10;
+    border-radius:0px 6px 0px 0px;
+	-moz-border-radius:0px 6px 0px 0px;
+	-webkit-border-radius:0px 6px 0px 0px;
+}
+
+.carousel .panel .paging{
+    position:absolute;
+    bottom: 25px;
+    left:25px;
+    width: 282px;
+    text-align:center;
+}
+
+.carousel .panel .paging a{
+    color: #4c4c4c;
+    font-size: 1.1em;
+}
+
+.carousel .panel .pause{
+    position:absolute;
+    right:20px;
+    top:25px;
+    display:block;
+    width: 18px;
+    height: 18px;
+    background: transparent url(../images/carousel_pause_bg.gif) no-repeat 0 0;
+    text-indent: -6000px;
+}
+
+.carousel .panel .play{
+    position:absolute;
+    right:20px;
+    top:25px;
+    display:block;
+    width: 18px;
+    height: 18px;
+    background: transparent url(../images/carousel_play_bg.gif) no-repeat 0 0;
+    text-indent: -6000px;
+}
+
+
+.carousel .panel .paging .next{
+    position:absolute;
+    right:7px;
+    bottom:-6px;
+    display:block;
+    width: 12px;
+    height: 23px;
+		overflow:hidden;
+    background:url(../images/next.gif) no-repeat 0 0;
+    text-indent: -9999em;
+}
+.carousel .panel .paging .next:hover {
+	background-position:0 -23px;
+}
+
+.carousel .panel .paging .previous{
+    position:absolute;
+    left:-7px;
+    bottom:-6px;
+    display:block;
+    width: 12px;
+    height: 23px;
+		overflow:hidden;
+    background:url(../images/prev.gif) no-repeat 0 0;
+    text-indent: -9999em;
+}
+.carousel .panel .paging .previous:hover {
+	background-position:0 -23px;
+}
+
+.carousel .panel .paging #numbers {
+	left:38%;
+	position:relative;
+	zoom:1;
+}
+
+.carousel .panel .paging #numbers a {
+   background:url(../images/bull-1.png) no-repeat 0 0;
+	 float:left;
+	 width:10px;
+	 height:10px;
+	 overflow:hidden;
+	 font-size:0;
+	 line-height:0;
+	 text-indent:-9999em;
+	 margin-right:7px;
+}
+.carousel .panel .paging #numbers a:hover {
+	background:url(../images/bull-2.png) no-repeat 0 0;
+}
+
+.carousel .panel .paging #numbers a.selected {
+  background:url(../images/bull-2.png) no-repeat 0 0;
+}
+
+
+
+.carousel .panel .details_wrapper {
+    position:absolute;
+    top:68px;
+    left:32px;
+    width: 262px;
+    overflow:hidden;
+    height: 200px;
+}
+
+.carousel .panel .details_wrapper .details{
+    height: 200px;
+}
+
+.carousel .panel .details_wrapper .details .detail{
+    width: 262px;
+    height: 200px;
+    float:left;
+		color:#a7afb4;
+
+}
+
+.carousel .panel .details_wrapper .details h2{
+    font-size:26px;
+		line-height:28px;
+		color:#fff;
+		font-weight:normal;
+		font-style:italic;
+		margin-bottom:12px;
+}
+.carousel .panel .details_wrapper .details p {
+	margin-bottom:10px;
+}
+
+.carousel .panel .details_wrapper .details a.more{
+    color: #fff;
+    font-size:14px;
+		font-style:italic;
+}
+
+/* END CAROUSEL */
